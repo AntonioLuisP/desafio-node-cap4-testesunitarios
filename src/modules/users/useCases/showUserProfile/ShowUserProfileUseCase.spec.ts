@@ -27,7 +27,7 @@ describe("Show User Profile Test", () => {
 
   it("Show not be able to show a not existent user By the id", async () => {
     expect(async () => {
-      const userFinded = await showUserProfileUseCase.execute("dsabiudbsaiud");
+      await showUserProfileUseCase.execute("dsabiudbsaiud");
     }).rejects.toBeInstanceOf(ShowUserProfileError);
   });
 });
