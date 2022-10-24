@@ -20,7 +20,7 @@ describe("Balance Test", () => {
     createUserUseCase = new CreateUserUseCase(inMemoryUsersRepository);
   });
 
-  it("should be able to make a deposit and a withdraw", async () => {
+  it("should be to get the balance of a user", async () => {
     const user = await createUserUseCase.execute({
       name: "Antonio",
       email: "antonio@gmail.com",
